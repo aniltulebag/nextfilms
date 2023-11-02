@@ -1,6 +1,6 @@
-import FeaturedMovie from "@/components/featured-movie";
-import Genres from "@/components/genres";
-import MoviesSection from "@/components/movies-section";
+import FeaturedMovie from '@/components/featured-movie';
+import Genres from '@/components/genres';
+import MoviesSection from '@/components/movies-section';
 
 const HomeContainer = ({
   genres = [],
@@ -19,7 +19,7 @@ const HomeContainer = ({
           title={
             genres.find(
               (genre) => genre.id.toString() === selectedGenreMovies.id
-            ).name
+            )?.name
           }
           movies={selectedGenreMovies.movies.slice(0, 6)}
         />
